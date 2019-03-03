@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="gemXSLT.xsl"?>
+
+<gems xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="gemXSD.xsd">
+
+  <gem gemID="0">
+    <name>Ruby</name>
+    <preciousness>precious</preciousness>
+    <origin>Asia</origin>
+    <visualParameters>
+      <color>red</color>
+      <transparency>80</transparency>
+      <wayOfCutting>9</wayOfCutting>
+    </visualParameters>
+    <value>1</value>
+  </gem>
+
+  <gem gemID="1">
+    <name>Diamond</name>
+    <preciousness>precious</preciousness>
+    <origin>Africa</origin>
+    <visualParameters>
+      <color>white</color>
+      <transparency>100</transparency>
+      <wayOfCutting>15</wayOfCutting>
+    </visualParameters>
+    <value>5</value>
+  </gem>
+
+  <gem gemID="2">
+    <name>Diamond</name>
+    <preciousness>precious</preciousness>
+    <origin>Africa</origin>
+    <visualParameters>
+      <color>yellow</color>
+      <transparency>85</transparency>
+      <wayOfCutting>8</wayOfCutting>
+    </visualParameters>
+    <value>3</value>
+  </gem>
+
+  <gem gemID="3">
+    <name>Zirconium</name>
+    <preciousness>semi precious</preciousness>
+    <origin>India</origin>
+    <visualParameters>
+      <color>yellow</color>
+      <transparency>90</transparency>
+      <wayOfCutting>9</wayOfCutting>
+    </visualParameters>
+    <value>1</value>
+  </gem>
+</gems>

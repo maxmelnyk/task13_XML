@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="gems"
+  xmlns="gems"
+  elementFormDefault="qualified">
+
+  <xs:element name="gems">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name='gem' type='gemType' minOccurs='0' maxOccurs='unbounded'/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+
+  <xs:complexType name="gemType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="preciousness" type="xs:string"/>
+      <xs:element name="origin" type="xs:string"/>
+      <xs:element name="visualParameters">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="color" type="xs:string"/>
+            <xs:element name="transparency">
+              <xs:simpleType>
+                <xs:restriction base="xs:decimal">
+                  <xs:fractionDigits value="100"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element name="wayOfCutting">
+              <xs:simpleType>
+                <xs:restriction base="xs:decimal">
+                  <xs:minInclusive value="4"/>
+                  <xs:maxInclusive value="15"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="value" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name='gemID' type='xs:integer'/>
+  </xs:complexType>
+</xs:schema>
